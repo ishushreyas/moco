@@ -144,6 +144,7 @@ recognition.onresult = function(
 
   mine = [
 
+   ["hello" , "hey" , "hi"] ,
    ["how are you",
 
     "how are things",
@@ -220,6 +221,7 @@ recognition.onresult = function(
 
   spk = [
 
+   ["Hey, there" , "Hello"] ,
    ["Nothing much",
 
     "Exciting things!"
