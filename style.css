@@ -886,7 +886,7 @@ right: 15px;
 
     transform: rotate(-43deg);
 
-    border: solid rgb(255,149,149);
+    border: solid rgb(255,149,149) 1.5px;
 
     background-color: white;
 
