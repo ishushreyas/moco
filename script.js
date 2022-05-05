@@ -179,7 +179,7 @@ recognition.onresult = function(
 
     "tired",
 
-    "sad"
+    "sad", "no"
 
    ],
 
@@ -224,7 +224,7 @@ recognition.onresult = function(
    ["Hey, there" , "Hello"] ,
    ["Nothing much",
 
-    "Exciting things!"
+    "Exciting things!", "I'm fine, thanks for asking"
 
    ],
 
