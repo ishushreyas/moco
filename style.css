@@ -904,6 +904,9 @@ right: 15px;
 
 @media screen and ( min-width: 500px)
             {
+.mouth{
+     border: solid 1.5px rgb(255,149,149);
+  }
 #eye_1{
 
 border: solid 1.5px;
