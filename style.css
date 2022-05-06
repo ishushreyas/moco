@@ -899,19 +899,7 @@ right: 15px;
     left: -4px;
 
     top: 11px;
-
 }
-
-@media screen and (min-width: 500px)
-
-{
-
-.mouth{
-
-border: solid rgb(255,149,149) 2px;
-
-}
-
 #eye_1{
 
 border: solid 1.5px;
