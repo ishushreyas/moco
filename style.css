@@ -901,6 +901,9 @@ right: 15px;
     top: 11px;
     overflow: hidden;
 }
+
+@media screen and ( min-width: 500px)
+            {
 #eye_1{
 
 border: solid 1.5px;
