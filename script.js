@@ -278,7 +278,7 @@ recognition.onresult = function(
 
   ];
 
- const fcn = [okay, okay, okay,
+ const fcn = [okay, okay, okay, okay
 
   okay,
 
