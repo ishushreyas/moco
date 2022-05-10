@@ -195,11 +195,11 @@ function drs_chg() {
  document.getElementById("dress").classList = drs.value;
 }
 function blush() {
-  const mybtnTimeout = setTimeout( function(){
+
  document.getElementById("blush1").backgroundColor= "rgb( 255, 90, 90)";
  document.getElementById("blush2").backgroundColor= "rgb( 255, 90, 90)";
-  }, 50 );
-  setTimeout (() => {
+  }
+  const mybtnTimeout = setTimeout( function() {
  document.getElementById("blush1").backgroundColor= "pink";
  document.getElementById("blush2").backgroundColor=  "pink";
   }, 3700)
