@@ -1,543 +1,265 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Nunito:ital,wght@1,700&family=Updock:wght@500&display=swap");
-
 *{
-
 transition: left 1s ease, top 0.7s ease, width 1s ease;
-
+ user-select: none; 
 }
-
 .you,.me{
-
 font-family: 'Nunito' ,sans-serif;
-
 font-size: 18px;
-
 }
-
 .you{
-
 color: rgb(252,119,109);
-
 }
-
 .me{
-
 color: rgb(60,252,131);
-
 }
-
 b{
-
 font-family: 'Updock', sans-serif;
-
 color: #8942a8;
-
-            font-family: 'Quicksand', sans-serif;
-
+font-family: 'Quicksand', sans-serif;
 }
-
 #syn,#message,select{
-
             padding: 10px 16px;
-
             color: rgb(255,44,44);
-
             font-family: 'Quicksand', sans-serif;
-
             text-align: center;
-
             font-weight: 700;
-
             font-size: 15px;
-
-            
-
             border-radius: 50px;
-
             outline: none;  
-
-            }
-*{
-         user-select: none;   
             }
 .speak{
-
         border-bottom: solid;
-
         border-radius: 0 50px;
-
         margin-top: 0;
-
         padding: 9px;
-
         background-color: rgba(190,190,190,0.5);
-
       font-family: 'Quicksand', sans-serif;
-
         }
-
         .command{
-
         margin-bottom: 0;
-
         border-radius: 50px 0;
-
         padding: 9px;
-
         background-color: rgba(190,190,190,0.5);
-
         font-family: 'Quicksand', sans-serif;
-
         }
-
 .history{
-
 margin-top: 0;
-
 overflow: scroll;
-
 height: 90%;
-
 }
-
 .swipe_card{
-
 display: none;
-
 position: absolute;
-
 background-color: rgb(222,222,222);
-
 bottom: 0px;
-
 height: 0;
-
 width: 100vw;
-
 filter: opacity(0%);
-
 box-shadow: 0 -5px 5px rgba(250,250,250,0.2);
-
 border-radius: 10px 10px 0 0;
-
 transition: all 0.5s ease;
-
 }
-
 .dark .swipe_card{
-
 background-color: #333333;
-
 color: white;
-
 }
-
 .swipe_card_o{
-
 display: initial;
-
 height: 70vh;
-
 filter: opacity(100%);
-
 }
-
 #save{
-
 position: absolute;
-
 bottom: 20px;
-
 right: 20px;
-
 border: none;
-
 color: rgb(132,162,250);
-
 background-color: rgb(0,0,0,0);
-
 }
-
 #cancel{
-
 position: absolute;
-
 bottom: 20px;
-
 right: 70px;
-
 border: none;
-
 color: rgb(132,162,250);
-
 background-color: rgb(0,0,0,0);
-
 }
-
 h2 {
-
  padding-top: 23px;
-
  margin-top: 0;
-
  border-radius: 10px 10px 0 0;
-
  border-bottom: solid 1px;
-
  text-align: center;
-
  margin-bottom: 0;
-
  box-shadow: 0 5px 5px rgba(0,0,0,0.3), inset 2px 2px 5px rgba(255,255,255,0.8), inset -2px -2px 5px rgba(255,255,255,0.8);
-
 }
-
 .dark h2{
-
 box-shadow: 0 5px 5px rgb(220,220,220,0.2), inset 2px 2px 5px rgba(22,2,2,0.5), inset -2px 0 5px rgba(2,2,2,0.5);
-
 }
-
 #setting_m{
-
 position: absolute;
-
 top: 17px;
-
 right: 17px;
-
 height: 25px;
-
 color: white;
-
 background-color: #006880;
-
 padding: 12px;
-
 border-radius: 20px;
-
 transition: all 0.3s ease;
-
 }
-
 .setting_mn{
-
 height: 75px !important;
-
 transition: height 0.3s ease;
-
 }
-
 #s_m{
-
 transform: rotate(360deg);
-
 transition: all 0.3s ease;
-
 }
-
 .s_n{
-
 border-bottom: solid;
-
 transition: all 0.3s ease;
-
 }
-
 .setting_bn{
-
 opacity: 1 !important;
-
 visibility: visible !important;
-
 transition: all 0.3s ease;
-
 }
-
 .hed_nav{
-
 width: auto;
-
 height: auto;
-
 opacity: 0;
-
 visibility: hidden;
-
 background-color: rgba(250,250,255,0);
-
 box-shadow: 0 -5px 5px rgb(0,0,0,0.1);
-
 transition: all 0.3s ease;
-
 }
-
 body {
-
  margin: 0;
-
  padding: 0;
-
  background-color: rgb(240, 98, 98);
-
 }
-
 .light{
-
 background-color: rgba(252,252,252,1);
-
 }
-
 .dark{
-
 background-color: rgba(52,52,52,1);
-
 }
-
   @keyframes speak{
-
   0%,100%{height:0px;width:17px; border-radius:solid white 0px; left:-4px; border-top: 0px; top: 11px;}
-
   25%,75%{height:0px;width:35px; border-radius:13px; left:-4px; border:solid rgb(255,190,190) 3px; top: 11px;}
-
   50%{height:3px;width:27px; border-radius:22px; left:-7px; border: solid rgb(255,190,190) 7px; top: 4px;}
-
   }
-
   @keyframes smile{
-
   0%,100%{height:7px;width:17px; border-radius:0px; left:70px;}
-
   50%{height:13px;width:40px; border-radius:0 0 25px 25px; left:54px;}
-
   }
-
   #voiceList{
-
   visibility: hidden;
-
   }
-
   #btnGiveCommand{
-
   position: absolute;
-
   color: white;
-
   right: 20px;
-
   width: 25px;
-
   height: 25px;
-
   padding: 15px;
-
   bottom: 20px;
-
   background-color: rgba(210,213,242,0.95);
-
   border-radius: 20%;
-
   box-shadow: 3px 3px 5px rgb(0,0,0,0.2);
-
   }
  #btnGiveCommand:active{
-
     box-shadow: inset 2px 2px 2px rgb(0,0,0,0.7);
-
 }
   .btnCmd{
-
   width: 150px !important;
-
   transition: all 2s ease;
-
   }
-
-         #edit{
-
-     z-index: 0;
-
-     font-family: "Quicksand" , sans-serif;
-
-     display: none;
-
-     color: rgb(132,162,250);
-
-     background-color: rgb(244,240,255);
-
-     border-radius: 39px;
-
-     margin: auto;
-
-     position: absolute;
-
-     top: 0;
-
-     bottom: 0;
-
-     left: 0;
-
-     right: 0;
-
-     height: 290px;
-
-     width: 70vw;
-
-     padding: 20px;
-
-     box-shadow: 17px 12px 5px rgb(0,0,0,0.2);
-
- }
-
- .dark #edit{
-
- background-color: rgb(202,199,209);
-
- }
-
- section{
-
- padding: 15px;
-
- }
-
- #mid{
-
- border-top: solid;
-
- border-bottom: solid;
-
- }
-
-    input, select{
-
-    padding: 5px !important;
-
-    }   
-
-            
-
-      
-
-        #d_close_h{
-
-        background-color: red;
-
-        
-
-        }
-
-        .dash{
-
-    height:93vh;
-
-    width:0;
-
-  background-color:rgba(221,213,243,.9);
-
-    position:absolute ;
-
-    top:0px;
-
-    right:85px;
-
-    visibility:hidden;
-
-    opacity: 0;
-
-    box-shadow: -5px 5px 7px rgba(0,0,0,0.5);
-
-    transition: all .5s ease;
-
-}
-
-.dash_o{
-
-    visibility: visible;
-
-    width:300px;
-
-    z-index:8px;
-
-   background-color:rgba(254,253,260,.1);
-
-    position:absolute ;
-
-    top:0px;
-
-    opacity: 1;
-
-    left:0px;
-
-    box-shadow: -5px 5px 7px rgba(0,0,0,0.5);
-
-    transition: all .5s ease;
-
-}
-
-.dark .dash_o{
-
-background-color: rgb(76,76,76);
-
-}
-
-.d_close,.d_close_h{
-
-    position: absolute;
-
-    left: 0;
-
-    top: 0;
-
-    width: 0vw;
-
-    height: 93vh;
-
-    background-color: rgba(0,0,0,0.1);
-
-    transition: all 0.3s ease;
-
-}
-
-.d_close_o,.d_close_h_o{
-
-    width: 100%;
-
-    transition: all 0.1s ease;
-
-    z-index: 0;
-
-}
-
-.about{
-
-position: absolute;
-
-right: 15px;
-
-}
-
-#mimo-install-banner-mobile{
-
-    visibility: hidden !important;
-
-    }
-
-    #mimo-install-banner{
-
-    visibility: hidden !important;
-
-    }
-
- 
-
 #edit{
-
+     z-index: 0;
+     font-family: "Quicksand" , sans-serif;
+     display: none;
+     color: rgb(132,162,250);
+     background-color: rgb(244,240,255);
+     border-radius: 39px;
+     margin: auto;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 290px;
+     width: 70vw;
+     padding: 20px;
+     box-shadow: 17px 12px 5px rgb(0,0,0,0.2);
+ }
+ .dark #edit{
+ background-color: rgb(202,199,209);
+ }
+ section{
+ padding: 15px;
+ }
+ #mid{
+ border-top: solid;
+ border-bottom: solid;
+ }
+    input, select{
+    padding: 5px !important;
+    } 
+.dash{
+    height:93vh;
+    width:0;
+  background-color:rgba(221,213,243,.9);
+    position:absolute ;
+    top:0px;
+    right:85px;
+    visibility:hidden;
+    opacity: 0;
+    box-shadow: -5px 5px 7px rgba(0,0,0,0.5);
+    transition: all .5s ease;
+}
+.dash_o{
+    visibility: visible;
+    width:300px;
+   background-color:rgba(254,253,260,.1);
+    position:absolute ;
+    top:0px;
+    opacity: 1;
+    left:0px;
+    box-shadow: -5px 5px 7px rgba(0,0,0,0.5);
+    transition: all .5s ease;
+}
+.dark .dash_o{
+background-color: rgb(76,76,76);
+}
+.d_close,.d_close_h{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0vw;
+    height: 93vh;
+    background-color: rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.d_close_o,.d_close_h_o{
+    width: 100%;
+    transition: all 0.1s ease;
+    z-index: 0;
+}
+.about{
+position: absolute;
+right: 15px;
+}
+#mimo-install-banner-mobile{
+    visibility: hidden !important;
+    }
+    #mimo-install-banner{
+    visibility: hidden !important;
+    }
+#edit{
     font-family: "Poppins", sans-serif;
-
     background-color: rgb(211, 211, 255);
 
     color: rgb(252,252,252);
