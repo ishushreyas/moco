@@ -198,7 +198,7 @@ function blush() {
 
  document.getElementById("blush1").backgroundColor= "rgb( 255, 90, 90)";
  document.getElementById("blush2").backgroundColor= "rgb( 255, 90, 90)";
-  }
+  
   
 
 
