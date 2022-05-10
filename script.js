@@ -196,8 +196,8 @@ function drs_chg() {
 }
 function blush() {
   const mybtnTimeout = setTimeout( function(){
- document.getElementById("blush1").backgroundColor= "rgb( 255, 190,190)";
- document.getElementById("blush2").backgroundColor= "rgb( 255, 190,190)";
+ document.getElementById("blush1").backgroundColor= "rgb( 255, 90, 90)";
+ document.getElementById("blush2").backgroundColor= "rgb( 255, 90, 90)";
   }, 50 );
   setTimeout (() => {
  document.getElementById("blush1").backgroundColor= "pink";
