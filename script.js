@@ -47,6 +47,7 @@ recognition.onresult = function(event) {
   ["tell me story", "tell me joke" ],
   ["bad", "bored", "tired", "sad", "no" ],
   ["thanks", "thank you" ],
+  ["beautiful", "wonderful", "great"],
   ["bye", "good bye", "goodbye" ],
  [ "what's your name"],
   [ "show history" ],
@@ -68,6 +69,7 @@ recognition.onresult = function(event) {
    ["You're welcome",
     "No problem"
    ],
+  ["o thanks", "I'm ownered", "You're very kind"],
    ["Goodbye",
     "See you later"
    ],
@@ -75,7 +77,7 @@ recognition.onresult = function(event) {
    [ "showing, history" ],
    [ "okay" ]
   ];
- const fcn = [okay, okay, okay, okay, okay, okay, okay, okay, setm, sing ];
+ const fcn = [okay, okay, okay, okay, okay, okay, blush, okay, okay, setm, sing ];
  for ( var j = 0; j < mine.length; j++) {
   for ( var i = 0; i < mine[j].length; i++) {
    if (command.toLowerCase().includes( mine[j][i])) {
@@ -191,6 +193,16 @@ function drs_chg() {
  var drs =
   document.getElementById("drs_opt");
  document.getElementById("dress").classList = drs.value;
+}
+function blush() {
+  const mybtnTimeout = setTimeout( function(){
+ document.getElementById("blush1").backgroundColor= "rgb( 255, 190,190)";
+ document.getElementById("blush2").backgroundColor= "rgb( 255, 190,190)";
+  }, 50 );
+  setTimeout (() => {
+ document.getElementById("blush1").backgroundColor= "pink";
+ document.getElementById("blush2").backgroundColor=  "pink";
+  }, 3700)
 }
 function light() {
  document.body.style.backgroundColor= "#faeded";
