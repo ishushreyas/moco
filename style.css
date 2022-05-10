@@ -819,7 +819,7 @@ right: 15px;
     float: left;
 
     filter: blur(10px);
-
+    transition: all 1s ease;
 }
 
 #blush2{
@@ -841,7 +841,7 @@ right: 15px;
     float: left;
 
     filter: blur(10px);
-
+    transition: all 1s ease;
 }
 
 #nose{
