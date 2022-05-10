@@ -199,10 +199,10 @@ function blush() {
  document.getElementById("blush1").backgroundColor= "rgb( 255, 90, 90)";
  document.getElementById("blush2").backgroundColor= "rgb( 255, 90, 90)";
   }
-  const mybtnTimeout = setTimeout( function() {
- document.getElementById("blush1").backgroundColor= "pink";
- document.getElementById("blush2").backgroundColor=  "pink";
-  }, 3700)
+  
+
+
+
 }
 function light() {
  document.body.style.backgroundColor= "#faeded";
