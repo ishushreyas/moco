@@ -1525,7 +1525,7 @@ animation: chg 2s forwards;
 
   left: 42px;
 
-  top: 5px;
+  top: 1px;
 
   background-color: var(--bd-sdw);
 
@@ -1543,7 +1543,7 @@ animation: chg 2s forwards;
 
     z-index: -2;
 
-    top: -392px;
+    top: -396px;
 
     left: 105px;
 
@@ -1565,7 +1565,7 @@ animation: chg 2s forwards;
 
     z-index: -1;
 
-    top: -385px;
+    top: -389px;
 
     left: 90px;
 
