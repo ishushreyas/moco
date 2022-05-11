@@ -1499,7 +1499,7 @@ animation: chg 2s forwards;
 
     width: 91px;
 
-    background-color: var(--skn-clr);
+    background-color: var(--drs-clr);
 
     position: relative;
 
@@ -1527,7 +1527,7 @@ animation: chg 2s forwards;
 
   top: 1px;
 
-  background-color: var(--bd-sdw);
+  background-color: var(--h-sdw);
 
 }
 
