@@ -67,6 +67,7 @@ color: white;
 }
 .swipe_card_o{
 display: initial;
+ justify-content: space-between;
 height: 70vh;
 filter: opacity(100%);
 }
