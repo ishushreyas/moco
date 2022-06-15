@@ -181,7 +181,7 @@ background-color: rgba(52,52,52,1);
 #edit{
      z-index: 0;
      font-family: "Quicksand" , sans-serif;
-     display: content;
+     display: none;
      color: rgb(132,162,250);
      background-color: rgb(244,240,255);
      border-radius: 39px;
