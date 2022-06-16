@@ -127,6 +127,12 @@ opacity: 1 !important;
 visibility: visible !important;
 transition: all 0.3s ease;
 }
+svg{
+    position: absolute;
+    top: -500px;
+    left: -57px;
+    transform: scale(0.23,0.35);
+}
 .hed_nav{
 width: auto;
 height: auto;
