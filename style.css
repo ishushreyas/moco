@@ -876,7 +876,7 @@ border: solid 1.5px;
 
 #waist1{
 
-    height: 22px;
+    height: 27px;
 
     width: 10px;
 
@@ -886,7 +886,7 @@ border: solid 1.5px;
 
     position: relative;
 
-    top: 5px;
+    top: -98px;
 
     left: 29px;
 
@@ -898,7 +898,7 @@ border: solid 1.5px;
 
 #waist2{
 
-    height: 22px;
+    height: 29px;
 
     width: 10px;
 
@@ -908,7 +908,7 @@ border: solid 1.5px;
 
     position: relative;
 
-    top: 5px;
+    top: -100px;
 
     left: 127px;
 
@@ -962,7 +962,7 @@ border: solid 1.5px;
 
     height: 65px;
 
-    width: 70px;
+    width: 62.5px;
 
     background-color: var(--drs-clr);
 
@@ -970,7 +970,7 @@ border: solid 1.5px;
 
     position: relative;
 
-    left: 15px;
+    left: 20px;
 
     top: -80px;
 
@@ -986,7 +986,7 @@ border: solid 1.5px;
 
     height: 65px;
 
-    width: 70px;
+    width: 62.5px;
 
     background-color: var(--drs-clr);
 
@@ -994,7 +994,7 @@ border: solid 1.5px;
 
     position: relative;
 
-    left: 83px;
+    left: 82.5px;
 
     top: -80px;
 
