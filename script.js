@@ -107,12 +107,10 @@ recognition.onresult = function(event) {
  var mode = document.body.classList;
  localStorage.setItem("history", his);
  localStorage.setItem("mode", mode);
- document.getElementById("no_animation").style.display="none";
+ 
  document.getElementById("animated").style.display="content";
  document.getElementById("syn").textContent = speak;
  toSpeak.onend = function(e) {
-  document.getElementById("no_animation").style.display="content";
-
  document.getElementById("animated").style.display="none";
  }
 }
