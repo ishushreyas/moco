@@ -111,9 +111,9 @@ recognition.onresult = function(event) {
  document.getElementById("animated").style.display="content";
  document.getElementById("syn").textContent = speak;
  toSpeak.onend = function(e) {
-  document.getElementById("no_animation").style.display="none";
+  document.getElementById("no_animation").style.display="content";
 
- document.getElementById("animated").style.display="content";
+ document.getElementById("animated").style.display="none";
  }
 }
 recognition.onerror =
