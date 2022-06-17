@@ -108,10 +108,10 @@ recognition.onresult = function(event) {
  localStorage.setItem("history", his);
  localStorage.setItem("mode", mode);
  
- document.getElementById("animated").style.display="content";
+ document.getElementById("animated").style.scale="(2.3,3.3)";
  document.getElementById("syn").textContent = speak;
  toSpeak.onend = function(e) {
- document.getElementById("animated").style.display="none";
+ document.getElementById("animated").style.scale="(0,0)";
  }
 }
 recognition.onerror =
