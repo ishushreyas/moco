@@ -66,9 +66,46 @@ background-color: transparent;
                 <div id="blush1"></div>
                 <div id="blush2"></div>
                 <div id="nose"></div>
-                <div id="mouth">
-                    <div class="mouth"></div>
-                </div>
+                <svg width="180%" height="1600px" id="no_animation">
+      <path stroke="red" fill="pink" d="M 70 225
+       Q 105 215 133 217
+       Q 135 219 146 220
+       Q 155 219 159 217
+       Q 180 215 220 225 
+       Q 145 290 70 225 "></path>
+      <path stroke="red" fill="white" d="M 70 225 Q 135 240 220 225 Q 135 240 70 225"></path>
+        </svg>
+             <div id="animated" hidden>
+        <svg width="180%" height="1600px">
+      <path stroke="red" fill="pink" d="M 70 225
+       Q 105 215 133 217
+       Q 135 219 146 220
+       Q 155 219 159 217
+       Q 180 215 220 225 
+       Q 145 290 70 225 ">
+           <animate attributeName="d" attributeType="XML" values="M 70 225
+       Q 105 215 133 217
+       Q 135 219 146 220
+       Q 155 219 159 217
+       Q 180 215 220 225 
+       Q 145 290 70 225;
+       M 70 225
+       Q 105 202 133 205
+       Q 135 207 146 208
+       Q 155 207 159 205
+       Q 180 203 220 225 
+       Q 145 300 70 225; 
+       M 70 225
+       Q 105 215 133 217
+       Q 135 219 146 220
+       Q 155 219 159 217
+       Q 180 215 220 225 
+       Q 145 290 70 225" dur="0.321s" repeatCount="indefinite" begin="00:00:01"/>
+       </path>
+      <path stroke="red" fill="white" d="M 70 225 Q 135 240 220 225 Q 135 240 70 225">
+          <animate attributeName="d" values="M 70 225 Q 135 240 220 225 Q 135 240 70 225 ;M 70 225 Q 135 220 220 225 Q 140 250 70 225; M 70 225 Q 135 240 220 225 Q 135 240 70 225" dur="0.321s" repeatCount="indefinite" begin="00:00:01"/>
+      </path>
+        </svg>
         </div>
         <div id="neck"></div>
         <div id="dress" class="dress2">
