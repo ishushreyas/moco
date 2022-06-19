@@ -72,15 +72,15 @@ height: 70vh;
 filter: opacity(100%);
 }
 #s_m{
-    -webkit-appearance: none;
+    -webkit-appearance: -apple-pay-button;
 }
 #dashboard{
     height:93vh;
     width:300px;
-  background-color:rgb(241, 237, 252);
+  background-color:rgb(255, 255, 255);
     position:absolute ;
     top:0px;
-    left: 100%;
+    left: -100%;
     transition: all .5s ease;
 }
 #s_m:checked ~ #dashboard{
