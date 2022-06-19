@@ -19,10 +19,7 @@ background-color: transparent;
     <a onclick="sett()">dashboard</a> <br>
     <a onclick="setm()">history </a>
 </span> </div>
-<div class="d_close_h" id="d_close_h" onclick="seth()">
-    <div class="swipe_card"><h2 style="font-family: Quicksand">History <span class="material-icons md-48" style="color: red;">close</span></h2>
-        <div class="history" onclick="nochild()"></div></div></div>
- <div class="d_close" id="d_close_s" onclick="log_close()"> <div class="dash" onclick="nochild()">
+<div id="dashboard"> 
 </div>
 <br>
 <select id="drs_opt" onchange="dress()" hidden>
@@ -30,7 +27,6 @@ background-color: transparent;
  <option>dress2</option>
  <option>dress3</option>
  </select>
-</div>
  <div id="edit" hidden>
  <section><span class="material-icons md-48 about" onclick="abt()">info</span>
  <label for="command">Users speech: </label><select>

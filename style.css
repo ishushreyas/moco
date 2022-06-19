@@ -71,6 +71,24 @@ display: initial;
 height: 70vh;
 filter: opacity(100%);
 }
+#s_m{
+    -webkit-appearance: none;
+}
+#dashboard{
+    height:93vh;
+    width:300px;
+  background-color:rgba(221,213,243,.9);
+    position:absolute ;
+    top:0px;
+    transition: all .5s ease;
+}
+#s_m:checked ~ #dashboard{
+    position:absolute ;
+    top:0px;
+    left:0px;
+    box-shadow: -5px 5px 7px rgba(0,0,0,0.5);
+    transition: all .5s ease;
+}
 #save{
 position: absolute;
 bottom: 20px;
@@ -215,29 +233,7 @@ background-color: rgba(52,52,52,1);
     input, select{
     padding: 5px !important;
     } 
-.dash{
-    height:93vh;
-    width:0;
-  background-color:rgba(221,213,243,.9);
-    position:absolute ;
-    top:0px;
-    right:85px;
-    visibility:hidden;
-    opacity: 0;
-    box-shadow: -5px 5px 7px rgba(0,0,0,0.5);
-    transition: all .5s ease;
-}
-.dash_o{
-    visibility: visible;
-    width:300px;
-   background-color:rgba(254,253,260,.1);
-    position:absolute ;
-    top:0px;
-    opacity: 1;
-    left:0px;
-    box-shadow: -5px 5px 7px rgba(0,0,0,0.5);
-    transition: all .5s ease;
-}
+
 .dark .dash_o{
 background-color: rgb(76,76,76);
 }
