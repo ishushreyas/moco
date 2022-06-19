@@ -85,7 +85,7 @@ filter: opacity(100%);
 }
 #s_m:checked ~ #dashboard{
     position: absolute;
-    left: 0;
+    left: 100%;
     box-shadow: -5px 5px 7px rgba(0,0,0,0.5);
     transition: all .5s ease;
 }
