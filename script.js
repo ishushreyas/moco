@@ -154,6 +154,9 @@ function s_down() {
 function seth() {
  document.querySelector(".swipe_card_o").classList = "swipe_card";
 }
+function setm() {
+  document.querySelector(".swipe_card").classList = "swipe_card_o";
+ }
 function abt() {
  alert("hello");
 }
