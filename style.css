@@ -77,15 +77,15 @@ filter: opacity(100%);
 #dashboard{
     height:93vh;
     width:300px;
-  background-color:rgba(221,213,243,.9);
+  background-color:rgba(241, 237, 252, 0.9);
     position:absolute ;
     top:0px;
+    left: 100%;
     transition: all .5s ease;
 }
 #s_m:checked ~ #dashboard{
-    position:absolute ;
-    top:0px;
-    left:0px;
+    position: absolute;
+    left: 0;
     box-shadow: -5px 5px 7px rgba(0,0,0,0.5);
     transition: all .5s ease;
 }
