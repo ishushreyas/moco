@@ -107,7 +107,6 @@ recognition.onresult = function(event) {
  var mode = document.body.classList;
  localStorage.setItem("history", his);
  localStorage.setItem("mode", mode);
- 
  document.getElementById("animated").hidden = false;
  document.getElementById("syn").textContent = speak;
  toSpeak.onend = function(e) {
@@ -127,21 +126,7 @@ window.onload = function() {
  document.querySelector(".history").innerHTML = h;
  var m = localStorage.getItem("mode");
  document.body.classList = m;
- sttim();
-}
-function sttim() {
  const mycmdTimeout = setTimeout( strech, 13000);
- const mycmdbtnTimeout = setTimeout( short, 13000);
-}
-function sett() {
- document.querySelector(".dash").classList.toggle("dash_o");
- document.querySelector(".d_close").classList.toggle("d_close_o");
- s_down();
-}
-function setm() {
- document.querySelector(".swipe_card").classList.toggle("swipe_card_o");
- document.querySelector(".d_close_h").classList = "d_close_h_o";
- s_down();
 }
 function nochild() {
  event.stopPropagation();
@@ -152,17 +137,14 @@ function strech() {
  mic.style.transition = "all 1.5s ease";
  mic.classList.add("btnCmd");
  mic.style.borderRadius = "100px";
- sttim();
+ const mycmdbtnTimeout = setTimeout( short, 5000);
 }
 function short() {
  document.querySelector(".spkCmd").innerHTML = "";
  var mic = document.getElementById("btnGiveCommand");
  mic.classList.remove("btnCmd");
  mic.style.borderRadius = "20%";
-}
-function log_close() {
- document.querySelector(".d_close_o").classList = "d_close";
- document.querySelector(".dash_o").classList = "dash";
+  const mycmdTimeout = setTimeout( strech, 13000);
 }
 function s_down() {
  document.getElementById("s_m").classList.toggle("s_n");
@@ -196,14 +178,8 @@ function drs_chg() {
  document.getElementById("dress").classList = drs.value;
 }
 function blush() {
-
  document.getElementById("blush1").backgroundColor= "rgb( 255, 90, 90)";
  document.getElementById("blush2").backgroundColor= "rgb( 255, 90, 90)";
-  
-  
-
-
-
 }
 function light() {
  document.body.style.backgroundColor= "#faeded";
