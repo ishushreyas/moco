@@ -199,7 +199,7 @@ background-color: rgba(52,52,52,1);
     box-shadow: inset 2px 2px 2px rgb(0,0,0,0.7);
 }
   .btnCmd{
-  width: 150px !important;
+  width: auto !important;
   transition: all 2s ease;
   }
 #edit{
