@@ -36,7 +36,7 @@ recognition.onresult = function(event) {
  var last = event.results.length - 1;
  var command = event.results[last][0].transcript;
  message.textContent = command;
- const mine = [
+ window.mine = [
    ["hello" , "hey" , "hi"] ,
    ["how are you",
     "how are things",
@@ -53,7 +53,7 @@ recognition.onresult = function(event) {
   [ "show history" ],
   [ "sing" ]
 ];
- const spk = [
+ window.spk = [
    ["Hey, there" , "Hello"] ,
    ["Nothing much",
     "Exciting things!", "I'm fine, thanks for asking"
@@ -132,7 +132,9 @@ function nochild() {
  event.stopPropagation();
 }
 function strech() {
- document.querySelector(".spkCmd").innerHTML = "try saying, ";
+ let i = mine[Math.floor(Math.random()*mine.length)];
+ let j = mine[i][Math.floor(Math.random()*mine[i].length)];
+ document.querySelector(".spkCmd").innerHTML = "try saying, " + mine[i][j];
  var mic = document.getElementById("btnGiveCommand");
  mic.style.transition = "all 1.5s ease";
  mic.classList.add("btnCmd");
