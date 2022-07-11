@@ -82,7 +82,7 @@ recognition.onresult = function(event) {
   for ( var i = 0; i < mine[j].length; i++) {
    if (command.toLowerCase().includes( mine[j][i])) {
     var speak = spk[j][Math.floor(Math.random()*spk[j].length)];
-    console.log(speak.split("");
+    console.log(speak.split(""));
     fcn[j]();
    }
   }
